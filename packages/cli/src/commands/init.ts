@@ -3,7 +3,7 @@ import path from 'path';
 import chalk from 'chalk';
 import { execSync } from 'child_process';
 
-const CONFIG_FILE = '.brand-uirc.json';
+const CONFIG_FILE = '.shadowfax.json';
 
 interface Config {
   baseDir: string;
@@ -72,7 +72,7 @@ export async function handleInit() {
     console.log(chalk.green('✓ Created brand components directory:', config.brandDir));
 
     console.log(chalk.blue('\nInitialization complete! You can now start adding components.'));
-    console.log(chalk.gray('Try running: brand-ui add button'));
+    console.log(chalk.gray('Try running: shadowfax add button'));
 
   } catch (error) {
     if (error instanceof Error) {

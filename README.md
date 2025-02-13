@@ -1,11 +1,11 @@
-# brand-ui
+# shadowfax-ui
 
 A tool for managing shadcn components with base/brand layering. This monorepo contains both the CLI tool and an example app demonstrating its usage.
 
 ## Project Structure
 
 ```
-brand-ui/
+shadowfax-ui/
 ├─ packages/
 │  ├─ cli/              # The core CLI tool
 │  └─ example-app/      # Example Next.js app using the tool
@@ -30,16 +30,16 @@ brand-ui/
    ```bash
    cd ../example-app
    pnpm link ../cli  # Link the local CLI package
-   pnpm brand-ui init
-   pnpm brand-ui add button
+   pnpm shadowfax init
+   pnpm shadowfax add button
    ```
 
 ## Available Commands
 
-- `brand-ui init` - Initialize the base/brand component structure
-- `brand-ui add <component>` - Add a new component
-- `brand-ui update <component>` - Update an existing component
-- `brand-ui brand list` - List all brand overrides
+- `shadowfax init` - Initialize the base/brand component structure
+- `shadowfax add <component>` - Add a new component
+- `shadowfax update <component>` - Update an existing component
+- `shadowfax brand list` - List all brand overrides
 
 ## Development
 

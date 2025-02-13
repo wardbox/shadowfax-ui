@@ -24,7 +24,7 @@ function isFileError(error: unknown): error is FileError {
 export async function handleBrand(subcommand: string, ...args: string[]) {
   try {
     // Read config
-    const config: Config = await fs.readJSON('.brand-uirc.json');
+    const config: Config = await fs.readJSON('.shadowfax.json');
 
     switch (subcommand) {
       case 'list':
@@ -37,8 +37,8 @@ export async function handleBrand(subcommand: string, ...args: string[]) {
     }
 
   } catch (error) {
-    if (isFileError(error) && error.code === 'ENOENT' && error.path === '.brand-uirc.json') {
-      console.error(chalk.red('Error: Project not initialized. Run "brand-ui init" first.'));
+    if (isFileError(error) && error.code === 'ENOENT' && error.path === '.shadowfax.json') {
+      console.error(chalk.red('Error: Project not initialized. Run "shadowfax init" first.'));
     } else {
       console.error(chalk.red('Error in brand command:'), error);
     }
@@ -52,7 +52,7 @@ async function listBrandOverrides(config: Config) {
     
     if (brandFiles.length === 0) {
       console.log(chalk.yellow('No brand overrides found.'));
-      console.log(chalk.gray('Try adding a component first with: brand-ui add button'));
+      console.log(chalk.gray('Try adding a component first with: shadowfax add button'));
       return;
     }
 

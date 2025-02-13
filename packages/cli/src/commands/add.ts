@@ -47,7 +47,7 @@ function resolveAliasPath(aliasPath: string): string {
 export async function handleAdd(componentName: string) {
   try {
     // Read configs
-    const config: Config = await fs.readJSON('.brand-uirc.json');
+    const config: Config = await fs.readJSON('.shadowfax.json');
     const shadcnConfig = await fs.readJSON('components.json') as ShadcnConfig;
     
     // Convert @ alias paths to real paths
@@ -143,8 +143,8 @@ export function ${capitalizedName}({ className, ...props }: ${capitalizedName}Pr
     console.log(chalk.gray('You can now customize the brand override in:', brandComponentPath));
 
   } catch (error) {
-    if (isFileError(error) && error.code === 'ENOENT' && error.path === '.brand-uirc.json') {
-      console.error(chalk.red('Error: Project not initialized. Run "brand-ui init" first.'));
+    if (isFileError(error) && error.code === 'ENOENT' && error.path === '.shadowfax.json') {
+      console.error(chalk.red('Error: Project not initialized. Run "shadowfax init" first.'));
     } else {
       console.error(chalk.red('Error adding component:'), error);
     }

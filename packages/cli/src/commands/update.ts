@@ -24,14 +24,14 @@ function isFileError(error: unknown): error is FileError {
 export async function handleUpdate(componentName: string) {
   try {
     // Read config
-    const config: Config = await fs.readJSON('.brand-uirc.json');
+    const config: Config = await fs.readJSON('.shadowfax.json');
 
     const baseComponentPath = path.join(config.baseDir, `${componentName}.tsx`);
     
     // For MVP, we'll just check if the component exists
     if (!await fs.pathExists(baseComponentPath)) {
       console.error(chalk.red(`Error: Component ${componentName} not found in base directory.`));
-      console.log(chalk.gray(`Try adding it first with: brand-ui add ${componentName}`));
+      console.log(chalk.gray(`Try adding it first with: shadowfax add ${componentName}`));
       process.exit(1);
     }
 
@@ -47,8 +47,8 @@ export async function handleUpdate(componentName: string) {
     console.log(chalk.gray('- Update dependencies if needed'));
 
   } catch (error) {
-    if (isFileError(error) && error.code === 'ENOENT' && error.path === '.brand-uirc.json') {
-      console.error(chalk.red('Error: Project not initialized. Run "brand-ui init" first.'));
+    if (isFileError(error) && error.code === 'ENOENT' && error.path === '.shadowfax.json') {
+      console.error(chalk.red('Error: Project not initialized. Run "shadowfax init" first.'));
     } else {
       console.error(chalk.red('Error updating component:'), error);
     }
