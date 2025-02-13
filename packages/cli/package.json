@@ -1,6 +1,6 @@
 {
-  "name": "@brand-ui/cli",
-  "version": "0.0.1",
+  "name": "@wardbox/brand-ui",
+  "version": "0.0.1-beta.0",
   "description": "CLI tool for managing shadcn components with base/brand layering",
   "type": "module",
   "bin": {
@@ -23,7 +23,7 @@
     "react",
     "nextjs"
   ],
-  "author": "Your Name",
+  "author": "wardbox",
   "license": "MIT",
   "dependencies": {
     "commander": "^11.0.0",
@@ -40,10 +40,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/brand-ui.git"
+    "url": "https://github.com/wardbox/brand-ui.git "
   },
   "bugs": {
-    "url": "https://github.com/yourusername/brand-ui/issues"
+    "url": "https://github.com/wardbox/brand-ui/issues"
   },
-  "homepage": "https://github.com/yourusername/brand-ui#readme"
+  "homepage": "https://github.com/wardbox/brand-ui#readme"
 } 
