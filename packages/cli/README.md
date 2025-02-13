@@ -1,6 +1,8 @@
-# @wardbox/brand-ui
+# shadowfax-ui
 
-A CLI tool for managing shadcn components with base/brand layering. This tool helps you create and maintain a two-layer architecture for your UI components:
+A CLI tool for managing shadcn components with base/brand layering. Like its namesake - the lord of all horses from The Lord of the Rings - this tool aims to be swift, reliable, and elegant in managing your UI components.
+
+This tool helps you create and maintain a two-layer architecture for your UI components:
 - Base layer: Original shadcn components
 - Brand layer: Your customized versions with additional functionality
 
@@ -10,13 +12,13 @@ We recommend using pnpm for installation:
 
 ```bash
 # Using pnpm (recommended)
-pnpm add -D @wardbox/brand-ui@beta
+pnpm add -D shadowfax-ui@beta
 
 # Using npm
-npm install -D @wardbox/brand-ui@beta
+npm install -D shadowfax-ui@beta
 
 # Using yarn
-yarn add -D @wardbox/brand-ui@beta
+yarn add -D shadowfax-ui@beta
 ```
 
 ## Usage
@@ -26,10 +28,11 @@ yarn add -D @wardbox/brand-ui@beta
 First, initialize your project with the base/brand structure:
 
 ```bash
-# If installed locally in your project:
-pnpm brand-ui init
-# or
-npx @wardbox/brand-ui init
+# Using npx (no installation required)
+npx shadowfax init
+
+# Or if installed locally in your project:
+pnpm exec shadowfax init
 ```
 
 This will:
@@ -42,9 +45,11 @@ This will:
 To add a new shadcn component:
 
 ```bash
-pnpm brand-ui add button
-# or
-npx @wardbox/brand-ui add button
+# Using npx
+npx shadowfax add button
+
+# Or if installed locally
+pnpm exec shadowfax add button
 ```
 
 This creates:
@@ -56,7 +61,11 @@ This creates:
 To update an existing component with the latest shadcn version:
 
 ```bash
-npx brand-ui update button
+# Using npx
+npx shadowfax update button
+
+# Or if installed locally
+pnpm exec shadowfax update button
 ```
 
 ## Example: Enhanced Button with Loading State

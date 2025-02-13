@@ -7,9 +7,9 @@ import { handleUpdate } from "./commands/update.js";
 import { handleBrand } from "./commands/brand.js";
 
 program
-  .name("brand-ui")
+  .name("shadowfax")
   .description("CLI to manage shadcn components with base/brand layering")
-  .version("0.0.1");
+  .version("0.0.3-beta.0");
 
 program
   .command("init")

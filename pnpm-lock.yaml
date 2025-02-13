@@ -75,6 +75,9 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.0.3(@types/react@19.0.8)
+      '@wardbox/brand-ui':
+        specifier: 0.0.2-beta.0
+        version: 0.0.2-beta.0
       eslint:
         specifier: ^9
         version: 9.20.1(jiti@1.21.7)
@@ -464,6 +467,10 @@ packages:
   '@typescript-eslint/visitor-keys@8.24.0':
     resolution: {integrity: sha512-kArLq83QxGLbuHrTMoOEWO+l2MwsNS2TGISEdx8xgqpkbytB07XmlQyQdNDrCc1ecSqx0cnmhGvpX+VBwqqSkg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@wardbox/brand-ui@0.0.2-beta.0':
+    resolution: {integrity: sha512-gPMIp8VOOzEy1zeqtlBlkb7EqcXGLSgjB22Rd2RiLVqOnCEV/DONKPgs1bzDlBlpeoiIapk4N+JtmVz6D2nRVA==}
+    hasBin: true
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2137,6 +2144,12 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.24.0
       eslint-visitor-keys: 4.2.0
+
+  '@wardbox/brand-ui@0.0.2-beta.0':
+    dependencies:
+      chalk: 5.4.1
+      commander: 11.1.0
+      fs-extra: 11.3.0
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:

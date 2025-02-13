@@ -1,11 +1,10 @@
 {
-  "name": "@wardbox/brand-ui",
-  "version": "0.0.2-beta.0",
+  "name": "shadowfax-ui",
+  "version": "0.0.1-beta.0",
   "description": "CLI tool for managing shadcn components with base/brand layering",
   "type": "module",
   "bin": {
-    "@wardbox/brand-ui": "./dist/index.js",
-    "brand-ui": "./dist/index.js"
+    "shadowfax": "./dist/index.js"
   },
   "files": [
     "dist",
@@ -22,9 +21,11 @@
     "components",
     "cli",
     "react",
-    "nextjs"
+    "nextjs",
+    "brand",
+    "theme"
   ],
-  "author": "wardbox",
+  "author": "dylank",
   "license": "MIT",
   "dependencies": {
     "commander": "^11.0.0",
@@ -42,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wardbox/brand-ui.git"
+    "url": "https://github.com/dylank/shadowfax-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/wardbox/brand-ui/issues"
+    "url": "https://github.com/dylank/shadowfax-ui/issues"
   },
-  "homepage": "https://github.com/wardbox/brand-ui#readme"
+  "homepage": "https://github.com/dylank/shadowfax-ui#readme"
 } 
