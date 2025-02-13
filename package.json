@@ -1,0 +1,13 @@
+{
+  "name": "brand-ui",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "test": "pnpm -r run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+} 
