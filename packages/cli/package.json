@@ -25,7 +25,7 @@
     "brand",
     "theme"
   ],
-  "author": "dylank",
+  "author": "wardbox",
   "license": "MIT",
   "dependencies": {
     "commander": "^11.0.0",
@@ -43,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dylank/shadowfax-ui.git"
+    "url": "https://github.com/wardbox/shadowfax-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/dylank/shadowfax-ui/issues"
+    "url": "https://github.com/wardbox/shadowfax-ui/issues"
   },
-  "homepage": "https://github.com/dylank/shadowfax-ui#readme"
+  "homepage": "https://github.com/wardbox/shadowfax-ui#readme"
 } 
