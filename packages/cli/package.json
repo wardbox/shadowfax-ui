@@ -1,6 +1,6 @@
 {
   "name": "shadowfax-ui",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.2-beta.0",
   "description": "CLI tool for managing shadcn components with base/brand layering",
   "type": "module",
   "bin": {
