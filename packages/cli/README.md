@@ -1,4 +1,4 @@
-# @brand-ui/cli
+# @wardbox/brand-ui
 
 A CLI tool for managing shadcn components with base/brand layering. This tool helps you create and maintain a two-layer architecture for your UI components:
 - Base layer: Original shadcn components
@@ -10,13 +10,13 @@ We recommend using pnpm for installation:
 
 ```bash
 # Using pnpm (recommended)
-pnpm add -D @brand-ui/cli
+pnpm add -D @wardbox/brand-ui@beta
 
 # Using npm
-npm install -D @brand-ui/cli
+npm install -D @wardbox/brand-ui@beta
 
 # Using yarn
-yarn add -D @brand-ui/cli
+yarn add -D @wardbox/brand-ui@beta
 ```
 
 ## Usage
@@ -26,7 +26,10 @@ yarn add -D @brand-ui/cli
 First, initialize your project with the base/brand structure:
 
 ```bash
-npx brand-ui init
+# If installed locally in your project:
+pnpm brand-ui init
+# or
+npx @wardbox/brand-ui init
 ```
 
 This will:
@@ -39,7 +42,9 @@ This will:
 To add a new shadcn component:
 
 ```bash
-npx brand-ui add button
+pnpm brand-ui add button
+# or
+npx @wardbox/brand-ui add button
 ```
 
 This creates:
