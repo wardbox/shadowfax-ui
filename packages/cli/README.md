@@ -28,11 +28,14 @@ yarn add -D shadowfax-ui@beta
 First, initialize your project with the base/brand structure:
 
 ```bash
-# Using npx (no installation required)
-npx shadowfax init
-
-# Or if installed locally in your project:
+# Using pnpm (recommended)
 pnpm exec shadowfax init
+
+# Using npm
+npx shadowfax-ui init
+
+# Using yarn
+yarn shadowfax init
 ```
 
 This will:
@@ -45,11 +48,14 @@ This will:
 To add a new shadcn component:
 
 ```bash
-# Using npx
-npx shadowfax add button
-
-# Or if installed locally
+# Using pnpm (recommended)
 pnpm exec shadowfax add button
+
+# Using npm
+npx shadowfax-ui add button
+
+# Using yarn
+yarn shadowfax add button
 ```
 
 This creates:
@@ -61,11 +67,14 @@ This creates:
 To update an existing component with the latest shadcn version:
 
 ```bash
-# Using npx
-npx shadowfax update button
-
-# Or if installed locally
+# Using pnpm (recommended)
 pnpm exec shadowfax update button
+
+# Using npm
+npx shadowfax-ui update button
+
+# Using yarn
+yarn shadowfax update button
 ```
 
 ## Example: Enhanced Button with Loading State
